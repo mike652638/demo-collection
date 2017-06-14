@@ -18,7 +18,7 @@ Main Functions/Features:
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-# 初期项目合集
+# 初期项目展示
 
 这个小页面主要是节选一些我个人写的小网页, 这些小网页实现起来并不复杂, 因为他们是我从零开始自学前端初期的实践项目, 您可以进入<a target="_blank" href = "https://www.mike652638.com/demo.html">我的网站DEMO展示页</a>查看在线效果, 随时欢迎您提出任何问题, 建议或反馈 :) <br>
 
@@ -35,3 +35,6 @@ Main Functions/Features:
 5. 为了解决手机端伪(鼠标)滑过事件和触摸事件的冲突问题(具体表现为项目简介窗口滑动功能失效), 页面中应用了window.matchMedia("(hover:hover)").matches这个方法先对设备是否支持触摸功能进行测试, 再作出相应的差异性设置(比如在支持触摸功能的移动端屏蔽hover功能);
 
 6. 某些浏览器(比如Safari, QQ和UC等)默认开启了"滑动前进后退"的全局功能, 会与该页面的滑动翻页功能相冲突, 因此, 页面进一步优化加入了函数$(window).on("touchmove", function(e) { e.preventDefault(); })解决了这一冲突;
+
+<a target="_blank" href = "https://www.mike652638.com/demo.html"><img src="https://www.mike652638.com/demo/img/demoScrSht-pc.png" alt="demo-screenshot" /></a>
+
