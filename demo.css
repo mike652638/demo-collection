@@ -1,0 +1,159 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei", "arail", "sans serif";
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 2px 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #1abc9c;
+    text-shadow: 2px 2px 8px #333;
+}
+
+.container {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 1200px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    white-space: nowrap;
+    background-color: #333;
+}
+
+.scrlBtn {
+    position: absolute;
+    z-index: 99;
+    top: 410px;
+    display: block;
+    width: 42px;
+    height: 70px;
+}
+
+#scrlPrev {
+    left: -2px;
+    background: url(img/icon-slides.png) no-repeat 0 50%;
+}
+
+#scrlNext {
+    right: -2px;
+    background: url(img/icon-slides.png) no-repeat -43px 50%;
+}
+
+#scrlPrev:hover {
+    background: url(img/icon-slides.png) no-repeat -84px 50%;
+    background-color: #0080ff;
+}
+
+#scrlNext:hover {
+    background: url(img/icon-slides.png) no-repeat -125px 50%;
+    background-color: #0080ff;
+}
+
+.demoPanel {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: auto;
+    margin: 10px 5px;
+}
+
+.demoPanel:first-child {
+    margin-left: 10px;
+}
+
+.demoPanel:last-child {
+    margin-right: 10px;
+}
+
+.demoPanel img {
+    width: 300px;
+    height: auto;
+}
+
+.demoDesc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 300px;
+    height: 590px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    white-space: normal;
+}
+
+.demoCont {
+    padding-top: 16px;
+    background-color: #fff;
+}
+
+.demoCont span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.demoCont p {
+    font-size: 14px;
+    padding: 0 6px;
+    text-align: left;
+}
+
+.demoCont a {
+    text-decoration: none;
+}
+
+.iptIntro,
+.iptLink {
+    font-size: 16px;
+    z-index: 10;
+    width: 100%;
+    padding: 10px 6px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+    color: #1ac5df;
+    border: 1px solid #fff;
+    border-radius: 0;
+    outline: none;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 50px #333;
+    box-shadow: 2px 2px 50px #333;
+}
+
+.iptIntro {
+    margin-top: 488px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.iptLink {
+    cursor: pointer;
+}
+
+.iptLink:hover {
+    color: #fff;
+    background-color: #1ac5df;
+}
+
+
+/* 小技巧: 通过media query判断, 在不支持hover事件的触屏设备中直接设置按钮颜色为hover后的颜色
+http://www.javascriptkit.com/dhtmltutors/sticky-hover-issue-solutions.shtml */
+
+@media (hover:none),
+(hover:on-demand) {
+    .iptLink {
+        color: #fff;
+        background-color: #1ac5df;
+    }
+}
